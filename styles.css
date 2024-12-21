@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #2e2e2e;
@@ -8,6 +9,7 @@ body {
     flex-direction: column;
 }
 
+/* Header Styles */
 .top-header {
     position: fixed;
     top: 0;
@@ -48,8 +50,8 @@ body {
 .search-bar {
     padding: 8px 12px;
     font-size: 1rem;
-    width: 70%; /* Increased width */
-    max-width: 800px; /* Wider for larger screens */
+    width: 70%;
+    max-width: 800px;
     border: 1px solid #4ecca3;
     border-radius: 5px;
     background-color: #1a1a1a;
@@ -74,7 +76,7 @@ body {
     cursor: pointer;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
-    margin-left: 15px; /* Adjusted position to move closer to the search bar */
+    margin-left: 15px;
 }
 
 .sign-in:hover {
@@ -82,6 +84,7 @@ body {
     transform: translateY(-2px);
 }
 
+/* Content Layout */
 .content {
     display: flex;
     justify-content: space-between;
@@ -89,30 +92,8 @@ body {
     height: calc(100vh - 60px);
 }
 
-.left-section {
-    margin-left: 240px;
-    width: 40%;
-    background-color: #1a1a1a;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.right-section {
-    width: 30%;
-    background-color: #1a1a1a;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.left-section h2, .right-section h2 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #4ecca3;
-}
-
-aside.side-panel {
+/* Side Panel Styles */
+.side-panel {
     background-color: #1a1a1a;
     width: 200px;
     height: 100vh;
@@ -154,5 +135,30 @@ aside.side-panel {
 .side-buttons button:active {
     background: #37a474;
 }
+
+/* Left and Right Section */
+.left-section {
+    margin-left: 240px;
+    width: 40%;
+    background-color: #1a1a1a;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.right-section {
+    width: 30%;
+    background-color: #1a1a1a;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.left-section h2, .right-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #4ecca3;
+}
+
 
 
