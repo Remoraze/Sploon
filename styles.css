@@ -67,7 +67,7 @@ body {
 
 .sign-in {
     position: absolute;
-    right: 1cm; /* 1cm from the right edge */
+    right: 2cm; /* 1cm from the right edge */
     top: 15px;
     padding: 8px 20px;
     font-size: 0.9rem;
