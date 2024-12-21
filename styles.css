@@ -49,7 +49,7 @@ body {
     padding: 8px 12px;
     font-size: 1rem;
     width: 50%;
-    max-width: 400px; /* Set a max-width to avoid it becoming too large */
+    max-width: 400px;
     border: 1px solid #4ecca3;
     border-radius: 5px;
     background-color: #1a1a1a;
@@ -64,10 +64,6 @@ body {
 }
 
 .sign-in {
-    position: absolute;
-    top: 50%; /* Vertically center the button */
-    right: 10px; /* Move it 10px left from the edge */
-    transform: translateY(-50%); /* Perfect vertical alignment */
     padding: 5px 15px;
     font-size: 0.9rem;
     font-weight: bold;
@@ -78,6 +74,7 @@ body {
     cursor: pointer;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+    margin-left: 10px; /* Adds a small margin between search bar and button */
 }
 
 .sign-in:hover {
@@ -89,7 +86,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 70px 20px;
-    height: calc(100vh - 60px); /* Full height minus header */
+    height: calc(100vh - 60px);
 }
 
 .left-section {
@@ -157,4 +154,3 @@ aside.side-panel {
 .side-buttons button:active {
     background: #37a474;
 }
-
