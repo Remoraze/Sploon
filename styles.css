@@ -59,6 +59,9 @@ body {
 }
 
 .sign-in {
+    position: absolute;
+    top: 15px;
+    left: 20px; /* Significant move to the left */
     padding: 5px 15px;
     font-size: 0.9rem;
     font-weight: bold;
@@ -69,7 +72,6 @@ body {
     cursor: pointer;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
-    margin-right: 25px; /* Ensure the button is properly visible */
 }
 
 .sign-in:hover {
@@ -82,12 +84,20 @@ body {
     justify-content: space-between;
     padding: 70px 20px; /* Space below header */
     height: calc(100vh - 60px); /* Full height minus header */
-    margin-left: 220px; /* Leaves space for the sidebar */
 }
 
-.left-section, .right-section {
+.left-section {
+    margin-left: 240px; /* Space to avoid overlap with sidebar */
+    width: 40%; /* Reduced width to move further from the sidebar */
+    background-color: #1a1a1a;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.right-section {
     width: 30%;
-    background-color: #1a1a1a; /* Darker background for sections */
+    background-color: #1a1a1a; /* Same styling for consistency */
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
@@ -96,7 +106,7 @@ body {
 .left-section h2, .right-section h2 {
     font-size: 1.2rem;
     margin-bottom: 10px;
-    border-bottom: 2px solid #4ecca3; /* Underline style */
+    border-bottom: 2px solid #4ecca3;
 }
 
 aside.side-panel {
