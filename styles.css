@@ -6,6 +6,7 @@ body {
     margin: 0;
     height: 100vh;
     display: flex;
+    flex-direction: column;
 }
 
 .top-header {
@@ -16,8 +17,8 @@ body {
     color: #ffffff;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 20px; /* Padding for left and right edges */
+    justify-content: space-between; /* Space between left and right */
+    padding: 0 20px;
     height: 60px; /* Consistent header height */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
     z-index: 1000;
@@ -29,9 +30,9 @@ body {
 }
 
 .logo {
-    width: 40px; /* Adjust size of logo */
+    width: 40px;
     height: 40px;
-    margin-right: 10px; /* Space between logo and text */
+    margin-right: 10px;
 }
 
 .top-header h1 {
@@ -40,14 +41,14 @@ body {
 }
 
 .search-bar {
-    flex: 1; /* Takes up available space */
+    flex: 1;
     max-width: 500px;
     padding: 8px 12px;
     font-size: 1rem;
     margin: 0 20px;
     border: 1px solid #4ecca3;
     border-radius: 5px;
-    background-color: #1a1a1a; /* Matches header color */
+    background-color: #1a1a1a;
     color: #ffffff;
     outline: none;
     transition: border-color 0.3s ease;
@@ -68,6 +69,7 @@ body {
     cursor: pointer;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+    margin-right: 10px; /* Ensure the button stays visible */
 }
 
 .sign-in:hover {
@@ -75,11 +77,32 @@ body {
     transform: translateY(-2px);
 }
 
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 20px; /* Space below header */
+    height: calc(100vh - 60px); /* Full height minus header */
+}
+
+.left-section, .right-section {
+    width: 30%;
+    background-color: #1a1a1a; /* Darker background for sections */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.left-section h2, .right-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #4ecca3; /* Underline style */
+}
+
 aside.side-panel {
-    background-color: #1a1a1a; /* Darker grey for sidebar */
-    width: 200px; /* Fixed width for sidebar */
-    height: 100vh; /* Full-height sidebar */
-    padding-top: 90px; /* Extra padding to start below header and search bar */
+    background-color: #1a1a1a;
+    width: 200px;
+    height: 100vh;
+    padding-top: 90px;
     box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5);
     position: fixed;
     left: 0;
@@ -103,17 +126,18 @@ aside.side-panel {
     font-size: 0.9rem;
     font-weight: bold;
     color: white;
-    background: #1a1a1a; /* Matches sidebar color */
+    background: #1a1a1a;
     border: none;
-    border-radius: 5px; /* Slight rounding */
+    border-radius: 5px;
     cursor: pointer;
     transition: background 0.2s;
 }
 
 .side-buttons button:hover {
-    background: #3ba682; /* Changes color only on hover */
+    background: #3ba682;
 }
 
 .side-buttons button:active {
     background: #37a474;
 }
+
