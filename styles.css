@@ -69,7 +69,7 @@ body {
     cursor: pointer;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
-    margin-right: 10px; /* Ensure the button stays visible */
+    margin-right: 25px; /* Ensure the button is properly visible */
 }
 
 .sign-in:hover {
@@ -82,6 +82,7 @@ body {
     justify-content: space-between;
     padding: 70px 20px; /* Space below header */
     height: calc(100vh - 60px); /* Full height minus header */
+    margin-left: 220px; /* Leaves space for the sidebar */
 }
 
 .left-section, .right-section {
@@ -100,9 +101,9 @@ body {
 
 aside.side-panel {
     background-color: #1a1a1a;
-    width: 200px;
+    width: 200px; /* Fixed sidebar width */
     height: 100vh;
-    padding-top: 90px;
+    padding-top: 90px; /* Ensure space for header */
     box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5);
     position: fixed;
     left: 0;
@@ -140,4 +141,5 @@ aside.side-panel {
 .side-buttons button:active {
     background: #37a474;
 }
+
 
