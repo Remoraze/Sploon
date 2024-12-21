@@ -1,156 +1,157 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #2e2e2e;
-    color: white;
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
+body {  
+    font-family: Arial, sans-serif;  
+    background-color: #2e2e2e;  
+    color: white;  
+    margin: 0;  
+    height: 100vh;  
+    display: flex;  
+    flex-direction: column;  
+}  
 
-.top-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #1a1a1a;
-    color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    height: 60px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-}
+.top-header {  
+    position: fixed;  
+    top: 0;  
+    width: 100%;  
+    background-color: #1a1a1a;  
+    color: #ffffff;  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 0 20px;  
+    height: 60px;  
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);  
+    z-index: 1000;  
+}  
 
-.header-left {
-    display: flex;
-    align-items: center;
-}
+.header-left {  
+    display: flex;  
+    align-items: center;  
+}  
 
-.logo {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
+.logo {  
+    width: 40px;  
+    height: 40px;  
+    margin-right: 10px;  
+}  
 
-.top-header h1 {
-    margin: 0;
-    font-size: 1.5rem;
-}
+.top-header h1 {  
+    margin: 0;  
+    font-size: 1.5rem;  
+}  
 
-.search-container {
-    display: flex;
-    justify-content: center;
-    flex: 1;
-}
+.search-container {  
+    display: flex;  
+    justify-content: center;  
+    flex: 1;  
+}  
 
-.search-bar {
-    padding: 8px 12px;
-    font-size: 1rem;
-    width: 50%;
-    max-width: 400px;
-    border: 1px solid #4ecca3;
-    border-radius: 5px;
-    background-color: #1a1a1a;
-    color: #ffffff;
-    outline: none;
-    transition: border-color 0.3s ease;
-    text-align: center;
-}
+.search-bar {  
+    padding: 8px 12px;  
+    font-size: 1rem;  
+    width: 60%; /* Increased width */  
+    max-width: 600px; /* Wider bar */  
+    border: 1px solid #4ecca3;  
+    border-radius: 5px;  
+    background-color: #1a1a1a;  
+    color: #ffffff;  
+    outline: none;  
+    transition: border-color 0.3s ease;  
+    text-align: center;  
+}  
 
-.search-bar:focus {
-    border-color: #3ba682;
-}
+.search-bar:focus {  
+    border-color: #3ba682;  
+}  
 
-.sign-in {
-    padding: 5px 15px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: white;
-    background: #4ecca3;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
-    margin-left: 10px; /* Small gap between search bar and the button */
-}
+.sign-in {  
+    padding: 5px 15px;  
+    font-size: 0.9rem;  
+    font-weight: bold;  
+    color: white;  
+    background: #4ecca3;  
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer;  
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);  
+    transition: transform 0.2s, background 0.2s, box-shadow 0.2s;  
+    margin-left: 20px; /* Prevents overlap with search bar */  
+}  
 
-.sign-in:hover {
-    background: #3ba682;
-    transform: translateY(-2px);
-}
+.sign-in:hover {  
+    background: #3ba682;  
+    transform: translateY(-2px);  
+}  
 
-.content {
-    display: flex;
-    justify-content: space-between;
-    padding: 70px 20px;
-    height: calc(100vh - 60px);
-}
+.content {  
+    display: flex;  
+    justify-content: space-between;  
+    padding: 70px 20px;  
+    height: calc(100vh - 60px);  
+}  
 
-.left-section {
-    margin-left: 240px;
-    width: 40%;
-    background-color: #1a1a1a;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-}
+.left-section {  
+    margin-left: 240px;  
+    width: 40%;  
+    background-color: #1a1a1a;  
+    padding: 15px;  
+    border-radius: 5px;  
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);  
+}  
 
-.right-section {
-    width: 30%;
-    background-color: #1a1a1a;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-}
+.right-section {  
+    width: 30%;  
+    background-color: #1a1a1a;  
+    padding: 15px;  
+    border-radius: 5px;  
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);  
+}  
 
-.left-section h2, .right-section h2 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #4ecca3;
-}
+.left-section h2, .right-section h2 {  
+    font-size: 1.2rem;  
+    margin-bottom: 10px;  
+    border-bottom: 2px solid #4ecca3;  
+}  
 
-aside.side-panel {
-    background-color: #1a1a1a;
-    width: 200px;
-    height: 100vh;
-    padding-top: 90px;
-    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5);
-    position: fixed;
-    left: 0;
-    top: 0;
-}
+aside.side-panel {  
+    background-color: #1a1a1a;  
+    width: 200px;  
+    height: 100vh;  
+    padding-top: 90px;  
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5);  
+    position: fixed;  
+    left: 0;  
+    top: 0;  
+}  
 
-.side-buttons {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
+.side-buttons {  
+    list-style-type: none;  
+    padding: 0;  
+    margin: 0;  
+}  
 
-.side-buttons li {
-    margin-bottom: 10px;
-}
+.side-buttons li {  
+    margin-bottom: 10px;  
+}  
 
-.side-buttons button {
-    width: 100%;
-    text-align: left;
-    padding: 10px 20px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: white;
-    background: #1a1a1a;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.2s;
-}
+.side-buttons button {  
+    width: 100%;  
+    text-align: left;  
+    padding: 10px 20px;  
+    font-size: 0.9rem;  
+    font-weight: bold;  
+    color: white;  
+    background: #1a1a1a;  
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer;  
+    transition: background 0.2s;  
+}  
 
-.side-buttons button:hover {
-    background: #3ba682;
-}
+.side-buttons button:hover {  
+    background: #3ba682;  
+}  
 
-.side-buttons button:active {
-    background: #37a474;
-}
+.side-buttons button:active {  
+    background: #37a474;  
+}  
+
