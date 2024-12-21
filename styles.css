@@ -17,7 +17,7 @@ body {
     color: #ffffff;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Space between left and right */
+    justify-content: space-between;
     padding: 0 20px;
     height: 60px; /* Consistent header height */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
@@ -45,13 +45,14 @@ body {
     max-width: 500px;
     padding: 8px 12px;
     font-size: 1rem;
-    margin: 0 20px;
+    margin: 0 auto; /* Centered in header */
     border: 1px solid #4ecca3;
     border-radius: 5px;
     background-color: #1a1a1a;
     color: #ffffff;
     outline: none;
     transition: border-color 0.3s ease;
+    text-align: center;
 }
 
 .search-bar:focus {
@@ -60,8 +61,8 @@ body {
 
 .sign-in {
     position: absolute;
-    top: 15px;
-    left: 20px; /* Significant move to the left */
+    top: 10px; /* Adjusted for spacing */
+    right: 20px; /* Proper alignment with a bit of space from the edge */
     padding: 5px 15px;
     font-size: 0.9rem;
     font-weight: bold;
@@ -151,3 +152,4 @@ aside.side-panel {
 .side-buttons button:active {
     background: #37a474;
 }
+
